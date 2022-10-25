@@ -24,10 +24,8 @@ Pour les liens :
 - [BDD/MCD & MPD](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/74d3584cabdff6c43428ffa392c983bb40a0188e)
 
 - [Tailwind fonctionnel: import classes de couleurs](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/06b29498bbc10f7f4120be87cf7c9e42ccb9de49)
-- [Tailwind fonctionnel: import des fonts]()
-
+- [Tailwind fonctionnel: import des fonts](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/787696fbe0a5adf028831213cca267e45d637f67)
 -
-
 -
 
 Noté sur 40.
