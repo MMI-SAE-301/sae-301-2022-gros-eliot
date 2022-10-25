@@ -14,13 +14,25 @@
 Vous avez rendu à la racine du projet :
 
 - [x] Le modèle conceptuel de données (nom : [MCD.png](/MCD.png) ou [MPD.pdf](/MPD.png) [^1])
-- [ ] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
+- [x] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
 - [x] Avez-vous bien invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase comme développeur ?
 
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
 Pour les liens :
-[vers des fichiers](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes#relative-links-and-image-paths-in-readme-files) ou page d'un commit sur Github.
+- [BDD/MCD & MPD](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/8e78a3c3180653c656567d580a0dedd88dde70ee) 
+
+-
+
+-
+
+-
+
+
+
+
+
+
 
 Noté sur 40.
 
