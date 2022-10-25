@@ -41,8 +41,8 @@ select * FROM materiel;
 CREATE VIEW montresUser as
 select montre.* FROM montre, auth.users WHERE montre.id_user = auth.users.id;
 
-CREATE VIEW materieauxChaussure as
-select materiel.* FROM chaussure, materiel WHERE materiel.id_materiel = chaussure.id_materiel;
+CREATE VIEW materieauxMontre as
+select materiel.* FROM montre, materiel WHERE materiel.id_materiel = montre.id_materiel;
 
 
 --
