@@ -70,3 +70,8 @@ CREATE POLICY "Enable delete for authenticated users only" ON "public"."montre"
 AS PERMISSIVE FOR DELETE
 TO authenticated
 USING ((uid() = id_user))
+
+CREATE POLICY "Enable read access for all authenticated" ON "public"."materiel"
+AS PERMISSIVE FOR SELECT
+TO authenticated
+USING (true)
