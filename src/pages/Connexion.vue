@@ -92,7 +92,7 @@ async function loginGoogle() {
           <formKit
             :config="{
               classes: {
-                label: 'tiktak-text text-light',
+                label: 'tiktak-text text-thin text-white dark:text-black',
               },
             }"
             label="Nouvel utilisateur ?"
