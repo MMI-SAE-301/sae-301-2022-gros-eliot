@@ -66,3 +66,7 @@ TO authenticated
 USING ((uid() = id_user))
 WITH CHECK ((commande = false));
 
+CREATE POLICY "Enable delete for authenticated users only" ON "public"."montre"
+AS PERMISSIVE FOR DELETE
+TO authenticated
+USING ((uid() = id_user))
