@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex justify-between border-b-2 border-white bg-black p-3">
+  <div class="flex justify-between border-b-2 border-white bg-black p-4">
     <RouterLink to="/">
       <LogoTikTak class="h-10 w-20 fill-white" />
     </RouterLink>
@@ -46,9 +46,7 @@ const props = defineProps({
     :class="{ hidden: menuState }"
     class="block w-full bg-zinc-800 md:hidden"
   >
-    <div
-      class="flex flex-col-reverse items-center justify-center gap-4 p-4 text-lg"
-    >
+    <div class="flex flex-col-reverse items-center justify-center gap-4 p-4">
       <RouterLink to="/montre/" class="w-fit" @click="menuState = !menuState">
         <p class="w-fit">Collections</p>
       </RouterLink>

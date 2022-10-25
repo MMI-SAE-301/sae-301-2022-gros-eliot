@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .tiktak-h1 {
+        @apply text-4xl md:text-6xl lg:text-7xl font-bold;
+    }
+
+    .tiktak-h2 {
+        @apply text-3xl font-bold md:text-4xl lg:text-6xl;
+    }
+
+    .tiktak-text {
+        @apply text-base lg:text-lg;
+    }
+
+    .tiktak-bouton {
+        @apply text-xl md:text-2xl font-bold;
+    }
+
+    .tiktak-caption {
+        @apply text-xl md:text-2xl;
+    }
+
+
+       /* Pour l'icon calendrier de l'input type=date (darkmode)*/
+    ::-webkit-calendar-picker-indicator {
+        @apply dark:invert;
+    }
+
+}

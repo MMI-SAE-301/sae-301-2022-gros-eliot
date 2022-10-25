@@ -40,7 +40,7 @@ Noté sur 40.
 
 - [x] usage de Classes utilitaires (1pt)
   - [lien vers sa définition](/src/index.css)
-  - lien vers son usage
+  - [lien vers son usage](/src/pages/Connexion.vue#L4)
 - [ ] Composants graphiques (0-1-2pts)
   - liens
 - Technique CSS (0-1-2pts)
