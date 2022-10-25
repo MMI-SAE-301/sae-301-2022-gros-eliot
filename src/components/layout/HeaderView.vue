@@ -9,7 +9,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex justify-between border-b-2 border-white bg-black p-4">
+  <div
+    class="flex justify-between border-b-2 border-white bg-black p-4 dark:border-0"
+  >
     <RouterLink to="/">
       <LogoTikTak class="h-10 w-20 fill-white" />
     </RouterLink>
@@ -56,7 +58,7 @@ const props = defineProps({
   <!--Menu du header : CONTENU DU MENU MOBILE -->
   <section
     :class="{ hidden: menuState }"
-    class="block w-full bg-zinc-800 md:hidden"
+    class="block w-full bg-zinc-800 dark:bg-zinc-100 md:hidden"
   >
     <div class="flex flex-col-reverse items-center justify-center gap-4 p-4">
       <RouterLink to="/montre/" class="w-fit" @click="menuState = !menuState">
