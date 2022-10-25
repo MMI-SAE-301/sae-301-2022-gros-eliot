@@ -29,7 +29,7 @@ Pour les liens :
 
 - [Header responive + structure vue de base](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/7e7ef8621449182b1bd8092f0a6a29e38a69a1b0)
 
-- [connexion fonctionnel + "se déconnecter / se connecter" dans header](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/a6c045db19921b26e9e0ab7aac900dd066d08360)
+- [connexion fonctionnel + "se déconnecter / se connecter" dans header](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/d12680c506189098a4e3c80d476e989bccde3539)
 
 Noté sur 40.
 
