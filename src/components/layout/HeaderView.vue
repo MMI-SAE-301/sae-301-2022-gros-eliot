@@ -44,7 +44,7 @@ const props = defineProps({
   <!--Menu du header : CONTENU DU MENU MOBILE -->
   <section
     :class="{ hidden: menuState }"
-    class="block w-full bg-gray-800 md:hidden"
+    class="block w-full bg-zinc-800 md:hidden"
   >
     <div
       class="flex flex-col-reverse items-center justify-center gap-4 p-4 text-lg"
