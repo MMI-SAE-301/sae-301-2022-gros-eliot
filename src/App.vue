@@ -8,7 +8,7 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
     <HeaderView />
   </header>
 
-  <main>
+  <main class="h-full">
     <!-- Affiche les pages -->
     <Suspense>
       <router-view class="m-4 p-2" />

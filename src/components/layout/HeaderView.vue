@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import LogoTikTak from "../icons/LogoTikTak.vue";
 import { Bars3Icon } from "@heroicons/vue/24/outline";
+import { supabase, user } from "@/supabase";
 
 const props = defineProps({
-  menuState: { type: Boolean, default: false },
+  menuState: { type: Boolean, default: true },
 });
 </script>
 
@@ -32,7 +33,18 @@ const props = defineProps({
       >
         <p class="w-fit">Personnaliser</p>
       </RouterLink>
+
+      <button
+        v-if="user"
+        @pointerdown="supabase.auth.signOut()"
+        class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 text-gold-normal"
+        @click="menuState = !menuState"
+      >
+        <p class="w-fit">Se déconnecter</p>
+      </button>
+
       <RouterLink
+        v-else
         to="/connexion"
         class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 text-gold-normal"
         @click="menuState = !menuState"
