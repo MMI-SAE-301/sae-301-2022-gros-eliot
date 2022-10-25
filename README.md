@@ -31,6 +31,8 @@ Pour les liens :
 
 - [connexion fonctionnel + "se déconnecter / se connecter" dans header](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/d12680c506189098a4e3c80d476e989bccde3539)
 
+- [connexion fonctionnel (Google, Facebook)](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/3401c31e47153d5a806c1e2dbc6074250ee99186)
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)
