@@ -55,6 +55,9 @@ const props = defineProps({
       </RouterLink>
     </div>
   </div>
+
+  <!--Menu du header : CONTENU DU MENU MOBILE -->
+  <!--Menu du header : CONTENU DU MENU MOBILE -->
   <!--Menu du header : CONTENU DU MENU MOBILE -->
   <section
     :class="{ hidden: menuState }"
@@ -71,9 +74,20 @@ const props = defineProps({
       >
         <p class="w-fit">Personnaliser</p>
       </RouterLink>
+
+      <button
+        v-if="user"
+        @pointerdown="supabase.auth.signOut()"
+        class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 text-gold-normal"
+        @click="menuState = !menuState"
+      >
+        <p class="w-fit">Se déconnecter</p>
+      </button>
+
       <RouterLink
+        v-else
         to="/connexion"
-        class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 font-bold text-gold-normal"
+        class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 text-gold-normal"
         @click="menuState = !menuState"
       >
         <p class="w-fit">Se connecter</p>

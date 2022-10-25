@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { supabase, user } from "../supabase";
+
+import Facebook from "@/components/icons/Facebook.vue";
+import Google from "@/components/icons/Google.vue";
+
 import { useRouter } from "vue-router";
 const router = useRouter();
 
@@ -17,6 +21,28 @@ async function signIn(data, node) {
     node.setErrors([error.message]);
   } else {
     router.push("/");
+  }
+}
+
+async function loginFacebook() {
+  try {
+    const { user, session, error } = await supabase.auth.signIn({
+      provider: "facebook",
+    });
+    if (error) throw error;
+  } catch (error) {
+    alert(error.error_description || error.message);
+  }
+}
+
+async function loginGoogle() {
+  try {
+    const { user, session, error } = await supabase.auth.signIn({
+      provider: "google",
+    });
+    if (error) throw error;
+  } catch (error) {
+    alert(error.error_description || error.message);
   }
 }
 </script>
@@ -39,7 +65,7 @@ async function signIn(data, node) {
           @submit="signIn"
           :config="{
             classes: {
-              input: 'tiktak-input max-w-full',
+              input: 'tiktak-input max-w-full text-white',
               label: 'tiktak-label dark:text-black',
               form: 'flex flex-col gap-4',
             },
@@ -57,7 +83,12 @@ async function signIn(data, node) {
             type="email"
             placeholder="paul.dupont@exemple.com"
           />
-          <FormKit name="password" label="Mot de passe" type="password" />
+          <FormKit
+            name="password"
+            label="Mot de passe"
+            type="password"
+            placeholder="Insérez votre mot de passe"
+          />
           <formKit
             :config="{
               classes: {
@@ -71,6 +102,25 @@ async function signIn(data, node) {
             wrapper-class="flex items-center gap-2"
           />
         </FormKit>
+      </div>
+      <!--Boutons connexion Google / Facebook-->
+      <div class="mb-10 flex items-center justify-center gap-5">
+        <button
+          @click="loginFacebook"
+          id="button-facebook"
+          class="rounded-lg bg-blue-500 px-6 py-2"
+          sr-only="Connexion via Facebook"
+        >
+          <Facebook class="h-8 w-8 fill-white" />
+        </button>
+        <button
+          @click="loginGoogle"
+          id="button-google"
+          class="rounded-lg bg-white px-6 py-2 shadow-xl"
+          sr-only="Connexion via Google"
+        >
+          <Google class="h-8 w-8 fill-white" />
+        </button>
       </div>
     </div>
   </section>

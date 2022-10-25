@@ -1,5 +1,8 @@
 <template>
-  <p>
+  <h1 class="tiktak-h1 p-4">
+    Confidentialités créées pour intégration Facebook Login
+  </h1>
+  <p class="p-4">
     Dans le cadre de son activité de Tik Tak, la Société Tik Tak, représentée
     par Eliot Gros, est amenée à collecter et traiter les données personnelles
     de ses visiteurs. Les activités pour lesquelles la société est amené à
