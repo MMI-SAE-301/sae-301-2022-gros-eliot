@@ -22,16 +22,15 @@ async function signIn(data, node) {
 </script>
 
 <template>
-  <section class="py-20">
-    <h1 class="tiktak-h1 p-4 text-center text-gold-normal md:hidden">
-      Authentification
-    </h1>
+  <section class="py-20 text-gold-normal dark:text-black">
+    <!--titre alternatif pour petits écrans-->
+
+    <h1 class="tiktak-h1 p-4 text-center md:hidden">Authentification</h1>
+    <!--BOX : formulaire de connexion-->
     <div
-      class="m-auto flex w-11/12 flex-col items-center justify-center rounded-lg border-4 border-gold-normal md:w-4/6"
+      class="m-auto flex w-11/12 flex-col items-center justify-center rounded-lg border-4 border-gold-normal dark:border-black md:w-4/6"
     >
-      <h1 class="tiktak-h1 hidden p-4 text-gold-normal md:block">
-        Authentification
-      </h1>
+      <h1 class="tiktak-h1 hidden p-4 md:block">Authentification</h1>
       <!--Formulaire de connexion-->
       <div class="w-full p-4">
         <FormKit
@@ -41,14 +40,14 @@ async function signIn(data, node) {
           :config="{
             classes: {
               input: 'tiktak-input max-w-full',
-              label: 'tiktak-label text-gold-normal',
+              label: 'tiktak-label dark:text-black',
               form: 'flex flex-col gap-4',
             },
           }"
           :submit-attrs="{
             classes: {
               input:
-                'tiktak-bouton-border text-gold-normal border-gold-normal m-auto',
+                'tiktak-bouton-border  dark:border-black border-gold-normal m-auto',
             },
           }"
         >
