@@ -11,6 +11,10 @@ module.exports = {
           "rose": "#FFCAC3",
         },
       },
+
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [

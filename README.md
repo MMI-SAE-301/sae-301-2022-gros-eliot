@@ -20,19 +20,15 @@ Vous avez rendu à la racine du projet :
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
 Pour les liens :
-- [BDD/MCD & MPD](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/74d3584cabdff6c43428ffa392c983bb40a0188e) 
 
-- [Commit important 2]()
+- [BDD/MCD & MPD](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/74d3584cabdff6c43428ffa392c983bb40a0188e)
+
+- [Tailwind fonctionnel: import classes de couleurs](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/06b29498bbc10f7f4120be87cf7c9e42ccb9de49)
+- [Tailwind fonctionnel: import des fonts]()
 
 -
 
 -
-
-
-
-
-
-
 
 Noté sur 40.
 
@@ -43,8 +39,8 @@ Noté sur 40.
 - Code et Commit (0-2-4-6pts)
 - Code HTML spécifiquement sémantique et accessible (0-1-2pts)
 
-- [ ] usage de Classes utilitaires (1pt)
-  - lien vers sa définition
+- [x] usage de Classes utilitaires (1pt)
+  - [lien vers sa définition](/src/index.css)
   - lien vers son usage
 - [ ] Composants graphiques (0-1-2pts)
   - liens
