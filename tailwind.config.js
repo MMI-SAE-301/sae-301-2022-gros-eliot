@@ -4,7 +4,14 @@ const formKitTailwind = require("@formkit/themes/tailwindcss");
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "gold": {
+          "normal": "#FFD875",
+          "rose": "#FFCAC3",
+        },
+      },
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
