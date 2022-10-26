@@ -35,7 +35,7 @@ async function upsertCommande(dataForm, node) {
     .upsert(dataForm);
   if (error) node.setErrors([error.message]);
   else {
-    router.push("/basket/");
+    router.push("/montre/");
     node.setErrors([]);
     console.log("Réussi!");
   }
