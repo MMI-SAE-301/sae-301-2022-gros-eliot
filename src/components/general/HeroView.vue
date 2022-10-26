@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { supabase, user } from "@/supabase";
+import { UserIcon, PlusIcon } from "@heroicons/vue/24/solid";
 </script>
 
 <template>
@@ -19,15 +20,17 @@ import { supabase, user } from "@/supabase";
       >
         <RouterLink
           to="/montre/new"
-          class="tiktak-button-fill w-fit gap-1 bg-gold-normal text-black"
-          >Personnaliser</RouterLink
-        >
+          class="tiktak-button-fill gap-1 bg-gold-normal text-black"
+          >Personnaliser
+          <PlusIcon class="h-5 w-5 text-black" />
+        </RouterLink>
         <RouterLink
           v-if="user == null"
           to="/connexion"
-          class="tiktak-button-border w-fit gap-1 border-gold-normal text-gold-normal light:border-black light:text-black"
-          >Se connecter</RouterLink
-        >
+          class="tiktak-button-border gap-1 border-gold-normal text-gold-normal light:border-black light:text-black"
+          >Se connecter
+          <UserIcon class="h-5 w-5" />
+        </RouterLink>
       </div>
 
       <h2 class="tiktak-h2">
@@ -41,14 +44,15 @@ import { supabase, user } from "@/supabase";
         <RouterLink
           to="/montre/new"
           class="tiktak-button-fill w-fit gap-1 bg-gold-normal text-black"
-          >Personnaliser</RouterLink
-        >
+          >Personnaliser
+          <PlusIcon class="h-5 w-5 text-black" />
+        </RouterLink>
         <RouterLink
           v-if="user == null"
           to="/connexion"
           class="tiktak-button-border w-fit gap-1 border-gold-normal text-gold-normal light:border-black light:text-black"
-          >Se connecter</RouterLink
-        >
+          >Se connecter <UserIcon class="h-5 w-5"
+        /></RouterLink>
       </div>
     </div>
     <img

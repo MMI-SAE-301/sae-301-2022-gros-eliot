@@ -22,11 +22,11 @@
         */
 
     .tiktak-button-fill {
-        @apply text-base md:text-lg font-bold px-4 py-2 flex flex-row gap-3 justify-center items-center rounded-md;
+        @apply text-base w-fit md:text-lg font-bold px-4 py-2 flex flex-row gap-3 justify-center items-center rounded-md;
     }
 
     .tiktak-button-border {
-        @apply text-base md:text-lg font-bold px-4 py-2 flex flex-row gap-3 border-2 justify-center items-center rounded-md ;
+        @apply text-base w-fit md:text-lg font-bold px-4 py-2 flex flex-row gap-3 border-2 justify-center items-center rounded-md ;
     }
 
     /*
