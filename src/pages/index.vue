@@ -146,7 +146,7 @@ const exemples: Montre = [
         >
           <MontreFace class="w-48" v-bind="montre" />
           <div class="flex flex-col gap-0">
-            <!--  <p class="m-auto w-fit font-bold">{{ montre.libelle_montre }}</p>-->
+            <p class="m-auto w-fit font-bold">{{ montre.libelle_montre }}</p>
             <p class="m-auto w-fit">69,99€</p>
           </div>
         </RouterLink>
