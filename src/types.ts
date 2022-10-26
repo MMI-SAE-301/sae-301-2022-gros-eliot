@@ -28,11 +28,11 @@ export const materiaux = [
     label: "Plastique",
   },
   {
-    value: "/images/cuir.png",
+    value: "/images/cuir.webp",
     label: "Cuir",
   },
   {
-    value: "/images/metal.png",
+    value: "/images/metal.webp",
     label: "Métal",
   },
 ];

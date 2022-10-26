@@ -46,10 +46,10 @@ const exemples: Montre = [
       <img
         src="/images/ellipse-rose.svg"
         alt="Ellipse de décoration"
-        class="absolute inset-x-0 -z-10 h-1/2 w-full"
+        class="absolute inset-x-0 h-1/2 w-full"
       />
       <img
-        src="/images/golden-watch-one-tiktak.png"
+        src="/images/golden-watch-one-tiktak.webp"
         alt=""
         class="z-10 w-32 md:w-52"
       />

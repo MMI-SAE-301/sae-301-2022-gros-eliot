@@ -13,7 +13,7 @@ import { UserIcon, PlusIcon } from "@heroicons/vue/24/solid";
         Nous attendions votre visite.
       </h1>
       <img
-        src="/images/montres-hero-image.png"
+        src="/images/montres-hero-image.webp"
         alt="Exemples de montres"
         class="m-auto block w-72 p-4 md:m-1 md:hidden"
       />
@@ -58,7 +58,7 @@ import { UserIcon, PlusIcon } from "@heroicons/vue/24/solid";
       </div>
     </div>
     <img
-      src="/images/montres-hero-image.png"
+      src="/images/montres-hero-image.webp"
       alt="Exemples de montres"
       class="m-auto hidden w-96 p-4 md:m-1 md:block"
     />

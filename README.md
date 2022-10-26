@@ -49,6 +49,10 @@ Pour les liens :
 
 - [Page du produit disponible (commande possible)]()
 
+- [Page du produit : update (suppression possible)]()
+
+- [...]()
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)
