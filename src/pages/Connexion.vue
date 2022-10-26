@@ -51,7 +51,7 @@ async function loginGoogle() {
   <section class="py-20 text-gold-normal dark:text-black">
     <!--titre alternatif pour petits écrans-->
 
-    <h1 class="tiktak-h1 p-4 text-center md:hidden">Authentification</h1>
+    <h1 class="tiktak-h1 py-4 text-center md:hidden">Authentification</h1>
     <!--BOX : formulaire de connexion-->
     <div
       class="m-auto flex w-11/12 flex-col items-center justify-center rounded-lg border-4 border-gold-normal dark:border-black md:w-4/6"

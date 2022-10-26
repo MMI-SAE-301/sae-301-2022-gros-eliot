@@ -33,6 +33,8 @@ Pour les liens :
 
 - [connexion fonctionnel (Google, Facebook)](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/3401c31e47153d5a806c1e2dbc6074250ee99186)
 
+- [Footer responsive et fonctionnel]()
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)
