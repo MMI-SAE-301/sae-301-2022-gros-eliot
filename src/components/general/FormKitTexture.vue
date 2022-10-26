@@ -18,7 +18,7 @@ defineProps<{
   >
     <template #label="context">
       <div
-        class="w-fit border-2 bg-cover py-2 px-4 text-white peer-checked:border-gold-normal"
+        class="peer-checked:border-6 w-fit border-2 bg-cover py-2 px-4 text-white peer-checked:border-gold-normal"
         :style="{
           background: `linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url('${context.option.value}')`,
         }"
