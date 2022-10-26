@@ -20,7 +20,7 @@ defineProps<{
       <div
         class="w-fit border-2 bg-cover py-2 px-4 text-white peer-checked:border-gold-normal"
         :style="{
-          background: `linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%),url('${context.option.value}')`,
+          background: `linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url('${context.option.value}')`,
         }"
       >
         <p>{{ context.option.label }}</p>

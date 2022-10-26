@@ -41,6 +41,8 @@ Pour les liens :
 
 - [Début formulaire de personnalisation]()
 
+- [Formulaire de personnalisation terminté]()
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)

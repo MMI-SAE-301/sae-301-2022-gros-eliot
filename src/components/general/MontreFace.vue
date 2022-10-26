@@ -66,8 +66,7 @@ const affichageEcran = {
     <path
       d="M531.582 276.089H260.115C203.645 276.089 157.866 322.03 157.866 378.7V755.421C157.866 812.09 203.645 858.032 260.115 858.032H531.582C588.053 858.032 633.83 812.09 633.83 755.421V378.7C633.83 322.03 588.053 276.089 531.582 276.089Z"
       :fill="ecran"
-      stroke="black"
-      stroke-width="5"
+      class="stroke-zinc-700 stroke-[5px]"
       stroke-miterlimit="10"
     />
     <!--FIN  ECRAN (fond)-->

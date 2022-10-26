@@ -1,5 +1,5 @@
 export interface Montre {
-  libelle?: string,
+  libelle_montre?: string,
   bracelet?: string;
   boitier?: string;
   ecran?: string;

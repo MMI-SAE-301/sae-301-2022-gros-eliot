@@ -24,11 +24,30 @@ const faceView = ref(true);
 const profilView = ref(false);
 
 const montre = ref<Montre>(props.data ?? {});
+
+if (props.id) {
+  // On charge les données de la montre
+  let { data, error } = await supabase
+    .from("montre")
+    .select("*")
+    .eq("id_montre", props.id);
+  if (error) console.log("n'a pas pu charger le table montre :", error);
+  else montre.value = (data as any[])[0];
+}
+
+async function upsertMontre(dataForm, node) {
+  const { data, error } = await supabase.from("montre").upsert(dataForm);
+  if (error) node.setErrors([error.message]);
+  else {
+    node.setErrors([]);
+    router.push("/montre");
+  }
+}
 </script>
 
 <template>
   <div
-    class="m-auto flex max-w-7xl flex-col-reverse items-start justify-center gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-items-center"
+    class="m-auto flex max-w-7xl flex-col-reverse items-start justify-between gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-items-center"
   >
     <!--SECTION CUSTOMISATION-->
     <section class="h-fit max-w-3xl p-5">
@@ -40,22 +59,24 @@ const montre = ref<Montre>(props.data ?? {});
       <FormKit
         type="form"
         v-model="montre"
-        submit-label="Personnaliser"
+        @submit="upsertMontre"
+        submit-label="Terminer la personnalisation"
         :submit-attrs="{
           classes: {
-            input: 'tiktak-button-fill bg-gold-normal my-4 text-black',
+            input:
+              'tiktak-button-fill bg-gold-normal my-4 text-black md:mx-0 m-auto',
           },
         }"
         :config="{
           classes: {
-            input: 'tiktak-input',
+            input: 'tiktak-input max-w-md',
             label: 'tiktak-label text-gold-rose light:text-black',
           },
         }"
       >
         <FormKit
-          name="libelle"
-          label="Nom chaussure"
+          name="libelle_montre"
+          label="Nom de la montre"
           value=""
           placeholder="My Watch 01"
           type="text"
