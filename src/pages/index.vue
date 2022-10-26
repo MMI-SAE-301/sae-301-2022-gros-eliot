@@ -50,7 +50,7 @@ const exemples: Montre = [
       />
       <img
         src="/images/golden-watch-one-tiktak.webp"
-        alt=""
+        alt="Montre 'Golden Watch One TikTak', en édition limitée"
         class="z-10 w-32 md:w-52"
       />
       <div class="z-10 flex flex-col gap-2 p-4 md:p-0">
