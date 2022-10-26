@@ -5,7 +5,7 @@ import FooterView from "@/components/layout/FooterView.vue";
 </script>
 
 <template>
-  <header>
+  <header class="z-50">
     <HeaderView />
   </header>
 
@@ -16,5 +16,5 @@ import FooterView from "@/components/layout/FooterView.vue";
     </Suspense>
   </main>
 
-  <footer><FooterView /></footer>
+  <footer class="z-50"><FooterView /></footer>
 </template>

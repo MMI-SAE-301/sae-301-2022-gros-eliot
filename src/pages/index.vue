@@ -44,19 +44,19 @@ const exemples: Montre = [
       <img
         src="/images/ellipse-rose.svg"
         alt="Ellipse de décoration"
-        class="absolute inset-x-0 -z-10 h-1/2 w-full"
+        class="absolute inset-x-0 z-0 h-1/2 w-full"
       />
       <img
         src="/images/golden-watch-one-tiktak.png"
         alt=""
-        class="w-32 md:w-52"
+        class="z-10 w-32 md:w-52"
       />
-      <div class="flex flex-col gap-2">
+      <div class="z-10 flex flex-col gap-2">
         <h2 class="text-4xl font-black uppercase md:text-7xl">
           Golden Watch One TiK·TaK
         </h2>
         <p class="font-bold uppercase">// Édition limitée</p>
-        <p class="mx-auto my-2">
+        <p class="mx-auto my-2 p-4 md:p-0">
           Or rose, cuir noir / Boîtier de 45 mm (199,99€)
         </p>
         <p
@@ -75,12 +75,12 @@ const exemples: Montre = [
 
   <!--COLLECTION TIKTAK-->
   <section
-    class="mx-0 my-20 flex w-full flex-col gap-5 bg-gold-rose p-5 text-black"
+    class="z-10 mx-0 my-20 flex w-full flex-col gap-5 bg-gold-rose p-5 text-black"
   >
     <h2 class="tiktak-h1 text-center font-bold italic">
       AGRANDISSEZ LA COLLECTION TIK·TAK
     </h2>
-    <p class="">
+    <p class="m-auto max-w-4xl">
       Découvrez nos produits exclusifs, ainsi que les innovations proposées par
       la communauté. Grâce à notre
       <strong> système de personnalisation simple d’utilisation </strong>,
@@ -127,10 +127,12 @@ const exemples: Montre = [
   </section>
 
   <!--Exemples de montres : données fictives-->
-  <div class="m-4">
-    <h2 class="tiktak-h2">Exemples de modèles</h2>
-    <section
-      class="my-5 flex flex-row flex-wrap items-center justify-center gap-5"
+  <section class="z-10 m-auto w-fit">
+    <h2 class="tiktak-h2 m-auto w-fit text-gold-rose light:text-black">
+      Exemples de modèles
+    </h2>
+    <div
+      class="my-5 flex w-full flex-row flex-wrap items-center justify-center gap-5"
     >
       <div class="w-fit p-4" v-for="montre in exemples" :key="montre">
         <RouterLink
@@ -147,6 +149,6 @@ const exemples: Montre = [
           </div>
         </RouterLink>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>

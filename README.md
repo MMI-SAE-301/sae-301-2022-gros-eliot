@@ -39,6 +39,8 @@ Pour les liens :
 
 - [Fin page d'accueil avec exemples (composants SVG importés)]()
 
+- [Début formulaire de personnalisation]()
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)
