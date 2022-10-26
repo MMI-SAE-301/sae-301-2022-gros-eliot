@@ -20,6 +20,11 @@ module.exports = {
       screens: {
         'light': { 'raw': '(prefers-color-scheme: light)' },
       },
+
+      gridTemplateColumns: {
+        'produits': "repeat(auto-fit,minmax(200px,1fr))",
+      },
+    
     },
   },
   plugins: [

@@ -44,7 +44,7 @@ const exemples: Montre = [
       <img
         src="/images/ellipse-rose.svg"
         alt="Ellipse de décoration"
-        class="absolute inset-x-0 z-0 h-1/2 w-full"
+        class="z- absolute inset-x-0 h-1/2 w-full"
       />
       <img
         src="/images/golden-watch-one-tiktak.png"
@@ -60,13 +60,13 @@ const exemples: Montre = [
           Or rose, cuir noir / Boîtier de 45 mm (199,99€)
         </p>
         <p
-          class="tiktak-button-fill mx-auto hidden bg-gold-normal text-black md:block"
+          class="tiktak-button-fill z-50 mx-auto hidden bg-gold-normal text-black md:block"
         >
           Commander
         </p>
       </div>
       <p
-        class="tiktak-button-fill col-span-2 m-auto my-4 bg-gold-normal text-black md:hidden"
+        class="tiktak-button-fill z-50 col-span-2 m-auto my-4 bg-gold-normal text-black md:hidden"
       >
         Commander
       </p>
@@ -145,7 +145,7 @@ const exemples: Montre = [
           <MontreFace class="w-48" v-bind="montre" />
           <div class="flex flex-col gap-0">
             <p class="m-auto w-fit font-bold">{{ montre.libelle }}</p>
-            <p class="m-auto w-fit">49,99€</p>
+            <p class="m-auto w-fit">69,99€</p>
           </div>
         </RouterLink>
       </div>

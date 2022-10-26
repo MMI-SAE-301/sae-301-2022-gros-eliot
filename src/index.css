@@ -4,7 +4,7 @@
 
 @layer components {
     .tiktak-h1 {
-        @apply text-4xl md:text-5xl font-bold ;
+        @apply text-4xl md:text-5xl font-black ;
     }
 
     .tiktak-h2 {
