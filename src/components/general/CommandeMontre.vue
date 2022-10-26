@@ -63,8 +63,11 @@ async function supprimerMontre() {
 </script>
 
 <template>
-  <div class="p-4 underline">
+  <div class="p-4 underline" v-if="id">
     <RouterLink to="/montre"> &lt; Retour à la collection </RouterLink>
+  </div>
+  <div class="p-4 underline" v-else>
+    <RouterLink to="/"> &lt; Retour à l'accueil </RouterLink>
   </div>
 
   <!--Vue générale-->
