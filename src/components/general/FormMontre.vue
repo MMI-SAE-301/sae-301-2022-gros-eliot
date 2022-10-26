@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { TrashIcon } from "@heroicons/vue/24/outline";
-import type { Montre } from "@/types";
+import { type Montre, colorsEcran } from "@/types";
+
 import { ref } from "vue";
 import FormKitColors from "@/components/general/FormKitColors.vue";
 import FormKitTexture from "@/components/general/FormKitTexture.vue";
@@ -57,7 +58,27 @@ const montre = ref<Montre>(props.data ?? {});
     />
     <FormKitColors name="boitier" label="Boitier" />
     <FormKitColors name="bracelet" label="Bracelet" />
-    <FormKit name="ecran" label="Écran" />
+
+    <!--ECRAN : deux choix seulement-->
+    <FormKit
+      name="ecran"
+      label="Écran"
+      value="#FFFFFF"
+      type="radio"
+      :options="colorsEcran"
+      :sections-schema="{ inner: { $el: null }, decorator: { $el: null } }"
+      input-class="peer sr-only"
+      options-class="flex gap-5"
+    >
+      <template #label="context">
+        <div
+          class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600"
+          :style="{ backgroundColor: context.option.value }"
+        >
+          <span class="sr-only">{{ context.option.label }}</span>
+        </div>
+      </template>
+    </FormKit>
 
     <FormKitTexture name="boitier" label="Boitier" />
     <FormKitTexture name="bracelet" label="Bracelet" />

@@ -7,7 +7,7 @@ export interface Montre {
 }
 
 export const colors = {
-  "#3F3F3F": "Noir",
+  "#000000": "Noir",
   "#FFD875": "Or",
   "#FFCAC3": "Or rose",
   
@@ -22,6 +22,10 @@ export const colors = {
   "#808080": "Gris",
   "#800000": "Marron",
   "#808000": "Olive",
+};
+export const colorsEcran = {
+  "#000000": "Noir",
+  "#FFFFFF": "Blanc",
 };
 
 export const materiaux = [
