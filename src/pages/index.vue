@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { supabase, user } from "@/supabase";
+
+// @ts-ignore
 import HeroView from "@/components/general/HeroView.vue";
+// @ts-ignore
 import MontreFace from "@/components/general/MontreFace.vue";
+// @ts-ignore
 import MontreProfil from "@/components/general/MontreProfil.vue";
 
 import type { Montre } from "@/types";

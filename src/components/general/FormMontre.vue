@@ -5,12 +5,16 @@ import { TrashIcon } from "@heroicons/vue/24/outline";
 
 import { supabase } from "@/supabase";
 import { useRouter } from "vue-router";
-
+// @ts-ignore
 import FormKitColors from "@/components/general/FormKitColors.vue";
+// @ts-ignore
 import FormKitTexture from "@/components/general/FormKitTexture.vue";
+// @ts-ignore
 import FormKitEcrans from "@/components/general/FormKitEcrans.vue";
 
+// @ts-ignore
 import MontreFace from "./MontreFace.vue";
+// @ts-ignore
 import MontreProfil from "./MontreProfil.vue";
 
 const router = useRouter();
@@ -34,7 +38,7 @@ if (props.id) {
   if (error) console.log("n'a pas pu charger le table montre :", error);
   else montre.value = (data as any[])[0];
 }
-
+// @ts-ignore
 async function upsertMontre(dataForm, node) {
   const { data, error } = await supabase.from("montre").upsert(dataForm);
   if (error) node.setErrors([error.message]);

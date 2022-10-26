@@ -1,11 +1,10 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import LogoTikTak from "../icons/LogoTikTak.vue";
 import { Bars3Icon } from "@heroicons/vue/24/outline";
 import { supabase, user } from "@/supabase";
 
-const props = defineProps({
-  menuState: { type: Boolean, default: true },
-});
+const menuState = ref(true);
 </script>
 
 <template>

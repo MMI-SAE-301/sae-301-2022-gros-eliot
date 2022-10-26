@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Bars3Icon } from "@heroicons/vue/20/solid";
+// @ts-ignore
 import HeaderView from "@/components/layout/HeaderView.vue";
+// @ts-ignore
 import FooterView from "@/components/layout/FooterView.vue";
 </script>
 

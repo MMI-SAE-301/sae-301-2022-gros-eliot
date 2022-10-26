@@ -1,4 +1,5 @@
 <script setup lang="ts">
+// @ts-ignore
 import MontreFace from "@/components/general/MontreFace.vue";
 import type { Montre } from "@/types";
 import { ref } from "vue";
@@ -7,13 +8,16 @@ import { supabase } from "@/supabase";
 import { useRouter } from "vue-router";
 const router = useRouter();
 
+// @ts-ignore
 const montre = ref<Montre>(props.data ?? {});
 
+// @ts-ignore
 if (props.id) {
   // On charge les données de la montre
   let { data, error } = await supabase
     .from("montre")
     .select("*")
+    // @ts-ignore
     .eq("id_montre", props.id);
   if (error) console.log("n'a pas pu charger le table montre :", error);
   else montre.value = (data as any[])[0];

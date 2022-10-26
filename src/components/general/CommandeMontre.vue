@@ -3,7 +3,9 @@ import { TrashIcon } from "@heroicons/vue/24/outline";
 import type { Montre } from "@/types";
 import { ref } from "vue";
 
+// @ts-ignore
 import MontreFace from "./MontreFace.vue";
+// @ts-ignore
 import MontreProfil from "./MontreProfil.vue";
 
 import { supabase } from "@/supabase";
@@ -28,7 +30,7 @@ if (props.id) {
     montre.value = (data as any[])[0];
   }
 }
-
+// @ts-ignore
 async function upsertCommande(dataForm, node) {
   const { data: datacommande, error } = await supabase
     .from("montre")
@@ -45,6 +47,7 @@ async function supprimerMontre() {
   const { data, error } = await supabase
     .from("montre")
     .delete()
+    // @ts-ignore
     .match({ id_montre: montre.value.id_montre });
   if (error) {
     console.error(
