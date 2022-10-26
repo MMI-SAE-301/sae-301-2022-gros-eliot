@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { supabase, user } from "@/supabase";
 import HeroView from "@/components/general/HeroView.vue";
 import MontreFace from "@/components/general/MontreFace.vue";
 import MontreProfil from "@/components/general/MontreProfil.vue";
 
-import { supabase, user } from "@/supabase";
 import type { Montre } from "@/types";
 
 const exemples: Montre = [
