@@ -12,24 +12,26 @@ import FormKitEcrans from "@/components/general/FormKitEcrans.vue";
 
 import MontreFace from "./MontreFace.vue";
 import MontreProfil from "./MontreProfil.vue";
+
 const router = useRouter();
 
 const props = defineProps<{
   data?: Montre;
   id?: string;
-  faceView?: Boolean;
-  profilView?: Boolean;
 }>();
+
+const faceView = ref(true);
+const profilView = ref(false);
 
 const montre = ref<Montre>(props.data ?? {});
 </script>
 
 <template>
   <div
-    class="m-auto flex max-w-7xl flex-col-reverse items-start justify-center gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-1"
+    class="m-auto flex max-w-7xl flex-col-reverse items-start justify-center gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-items-center"
   >
     <!--SECTION CUSTOMISATION-->
-    <section class="h-fit">
+    <section class="h-fit max-w-3xl p-5">
       <h2 class="tiktak-h2 text-gold-rose light:text-black">
         Personnalisez votre montre connectée TiK·TaK
       </h2>
@@ -41,8 +43,7 @@ const montre = ref<Montre>(props.data ?? {});
         submit-label="Personnaliser"
         :submit-attrs="{
           classes: {
-            input:
-              'bg-red-500 my-4 px-5 py-3 rounded text-white font-bold hover:bg-red-700',
+            input: 'tiktak-button-fill bg-gold-normal my-4 text-black',
           },
         }"
         :config="{
@@ -74,7 +75,7 @@ const montre = ref<Montre>(props.data ?? {});
     <section class="m-auto h-fit w-fit">
       <!---->
       <!--BOUTONS DE NAV du carroussel-->
-      <div class="mx-auto my-4 flex w-fit gap-1">
+      <div class="mx-auto my-4 flex w-fit gap-5">
         <button
           class="rounded-full bg-red-200 p-5 font-bold"
           @click="(faceView = true), (profilView = false)"
@@ -99,13 +100,13 @@ const montre = ref<Montre>(props.data ?? {});
       </div>
       <div>
         <MontreFace
-          class="h-96 w-96"
+          class="h-60 w-60 lg:h-96 lg:w-96"
           v-bind="montre"
           :class="{ hidden: profilView }"
         />
 
         <MontreProfil
-          class="h-96 w-96"
+          class="h-60 w-60 lg:h-96 lg:w-96"
           v-bind="montre"
           :class="{ hidden: faceView }"
         />

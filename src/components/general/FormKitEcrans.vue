@@ -16,11 +16,11 @@ defineProps<{
     :options="colorsEcran"
     :sections-schema="{ inner: { $el: null }, decorator: { $el: null } }"
     input-class="peer sr-only"
-    options-class="flex gap-2"
+    options-class="flex flex-wrap gap-2"
   >
     <template #label="context">
       <div
-        class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600"
+        class="h-6 w-6 rounded-full border-2 peer-checked:border-4 peer-checked:border-gold-normal md:h-10 md:w-10"
         :style="{ backgroundColor: context.option.value }"
       >
         <span class="sr-only">{{ context.option.label }}</span>
