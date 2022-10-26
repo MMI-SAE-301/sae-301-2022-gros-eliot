@@ -37,6 +37,8 @@ Pour les liens :
 
 - [Hero de la page d'accueil - light mode à la place du dark mode]()
 
+- [Fin page d'accueil avec exemples (composants SVG importés)]()
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)
