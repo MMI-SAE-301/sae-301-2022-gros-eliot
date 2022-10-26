@@ -37,7 +37,7 @@ const exemples: Montre = [
   <!--Contenu de la page accueil-->
   <section class="flex flex-col gap-20">
     <!--Hero page accueil-->
-    <HeroView class="p-2 md:p-6" />
+    <HeroView class="mt-10 p-2 md:p-6" />
 
     <!--GOLDEN WATCH ONE-->
     <section

@@ -18,7 +18,7 @@ import { supabase, user } from "@/supabase";
     >
       <div class="flex flex-col gap-3 text-gold-normal">
         <h4 class="font-bold">Général</h4>
-        <ul>
+        <ul class="font-thin">
           <RouterLink to="/confidentialite">
             <li>CGV</li>
           </RouterLink>
@@ -33,7 +33,7 @@ import { supabase, user } from "@/supabase";
 
       <div class="flex flex-col gap-3 text-gold-normal" v-if="user">
         <h4 class="font-bold">Pages principales</h4>
-        <ul>
+        <ul class="font-thin">
           <RouterLink to="/montre/new">
             <li>Personnalisation</li>
           </RouterLink>
