@@ -11,6 +11,7 @@ const router = useRouter();
 const nvlUtilisateur = ref(false);
 
 // CONNEXION : commandes
+// @ts-ignore
 async function signIn(data, node) {
   const { user, error } = await (nvlUtilisateur.value
     ? supabase.auth.signUp(data)
@@ -31,6 +32,7 @@ async function loginFacebook() {
     });
     if (error) throw error;
   } catch (error) {
+    // @ts-ignore
     alert(error.error_description || error.message);
   }
 }
@@ -42,6 +44,7 @@ async function loginGoogle() {
     });
     if (error) throw error;
   } catch (error) {
+    // @ts-ignore
     alert(error.error_description || error.message);
   }
 }
