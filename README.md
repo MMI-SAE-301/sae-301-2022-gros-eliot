@@ -63,7 +63,7 @@ Noté sur 40.
   - [ ] Plusieurs tailles
     - Lesquelles...
 - [ ] Dark Mode (0-1-2pts)
-  - [ ] Simple usage de 'dark:'
+  - [ ] Simple usage de 'light:'
   - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
     - liens
 - "tailwin.config.js" (0-1-2pts)

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { supabase, user } from "../supabase";
+import { supabase, user } from "@/supabase";
 
 import Facebook from "@/components/icons/Facebook.vue";
 import Google from "@/components/icons/Google.vue";
@@ -48,13 +48,13 @@ async function loginGoogle() {
 </script>
 
 <template>
-  <section class="py-20 text-gold-normal dark:text-black">
+  <section class="py-20 text-gold-normal light:text-black">
     <!--titre alternatif pour petits écrans-->
 
     <h1 class="tiktak-h1 py-4 text-center md:hidden">Authentification</h1>
     <!--BOX : formulaire de connexion-->
     <div
-      class="m-auto flex w-11/12 flex-col items-center justify-center rounded-lg border-4 border-gold-normal dark:border-black md:w-4/6"
+      class="m-auto flex w-11/12 flex-col items-center justify-center rounded-lg border-4 border-gold-normal md:w-4/6 light:border-black"
     >
       <h1 class="tiktak-h1 hidden p-4 md:block">Authentification</h1>
       <!--Formulaire de connexion-->
@@ -66,14 +66,14 @@ async function loginGoogle() {
           :config="{
             classes: {
               input: 'tiktak-input max-w-full text-white',
-              label: 'tiktak-label dark:text-black',
+              label: 'tiktak-label light:text-black',
               form: 'flex flex-col gap-4',
             },
           }"
           :submit-attrs="{
             classes: {
               input:
-                'tiktak-bouton-border  dark:border-black border-gold-normal m-auto',
+                'tiktak-button-border  light:border-black border-gold-normal m-auto',
             },
           }"
         >
@@ -92,7 +92,7 @@ async function loginGoogle() {
           <formKit
             :config="{
               classes: {
-                label: 'tiktak-text text-thin text-white dark:text-black',
+                label: 'tiktak-text text-thin text-white light:text-black',
               },
             }"
             label="Nouvel utilisateur ?"

@@ -5,7 +5,7 @@ import { supabase, user } from "@/supabase";
 
 <template>
   <section
-    class="flex h-fit w-full flex-col items-center justify-between gap-10 border-t-2 border-white p-4 pb-20 md:flex-row"
+    class="flex h-fit w-full flex-col items-center justify-between gap-5 border-t-2 border-white bg-black p-8 pb-20 md:flex-row"
   >
     <div class="flex flex-col gap-5 p-4">
       <LogoTikTak class="h-fit w-48 fill-white" />

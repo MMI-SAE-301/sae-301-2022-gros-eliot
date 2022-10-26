@@ -15,6 +15,11 @@ module.exports = {
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
       },
+
+
+      screens: {
+        'light': { 'raw': '(prefers-color-scheme: light)' },
+      },
     },
   },
   plugins: [

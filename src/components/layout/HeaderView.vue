@@ -10,7 +10,7 @@ const props = defineProps({
 
 <template>
   <div
-    class="flex justify-between border-b-2 border-white bg-black p-4 dark:border-0"
+    class="flex justify-between border-b-2 border-white bg-black p-4 light:border-0"
   >
     <RouterLink to="/">
       <LogoTikTak class="h-10 w-20 fill-white" />
@@ -67,7 +67,7 @@ const props = defineProps({
   <!--Menu du header : CONTENU DU MENU MOBILE -->
   <section
     :class="{ hidden: menuState }"
-    class="block w-full bg-zinc-800 dark:bg-zinc-100 md:hidden"
+    class="block w-full bg-zinc-800 md:hidden light:bg-zinc-100"
   >
     <div class="flex flex-col-reverse items-center justify-center gap-4 p-4">
       <RouterLink to="/montre/" class="w-fit" @click="menuState = !menuState">
@@ -84,7 +84,7 @@ const props = defineProps({
       <button
         v-if="user"
         @pointerdown="supabase.auth.signOut()"
-        class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 text-gold-normal"
+        class="w-fit rounded-lg border border-gold-normal py-1 px-3 text-gold-normal light:border-black light:text-black"
         @click="menuState = !menuState"
       >
         <p class="w-fit">Se déconnecter</p>
@@ -93,7 +93,7 @@ const props = defineProps({
       <RouterLink
         v-else
         to="/connexion"
-        class="w-fit rounded-lg border border-gold-normal bg-black py-1 px-3 text-gold-normal"
+        class="w-fit rounded-lg border border-gold-normal py-1 px-3 text-gold-normal light:border-black light:text-black"
         @click="menuState = !menuState"
       >
         <p class="w-fit">Se connecter</p>
