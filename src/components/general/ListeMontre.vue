@@ -32,7 +32,7 @@ if (error) {
 }
 </script>
 <template>
-  <ul class="grid grid-cols-[repeat(minmax,(300px,1fr))]">
+  <ul class="my-16 grid grid-cols-produits gap-16 md:my-5 md:gap-5">
     <li
       v-for="montre in montres"
       :key="montre.id"
@@ -46,6 +46,11 @@ if (error) {
       >
         <MontreFace class="h-72 w-72 md:h-96 md:w-96" v-bind="montre" />
       </router-link>
+
+      <div class="flex w-fit flex-col gap-0 text-center">
+        <h4 class="font-bold">{{ montre.libelle_montre }}</h4>
+        <p>39,99€</p>
+      </div>
 
       <router-link
         :to="{

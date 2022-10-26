@@ -6,7 +6,7 @@ import ListeMontre from "@/components/general/ListeMontre.vue";
     <div
       class="flex flex-col flex-wrap items-center justify-center gap-4 p-4 md:flex-row md:justify-start md:gap-6"
     >
-      <h2 class="tiktak-h2 text-gold-rose light:text-black">
+      <h2 class="tiktak-h2 text-center text-gold-rose light:text-black">
         Votre collection TiK·TaK
       </h2>
       <RouterLink

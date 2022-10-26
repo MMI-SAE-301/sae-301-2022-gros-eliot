@@ -22,7 +22,7 @@ module.exports = {
       },
 
       gridTemplateColumns: {
-        'produits': "repeat(auto-fit,minmax(200px,1fr))",
+        'produits': "repeat(auto-fit,minmax(280px,1fr))",
       },
     
     },

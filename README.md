@@ -41,7 +41,11 @@ Pour les liens :
 
 - [Début formulaire de personnalisation]()
 
-- [Formulaire de personnalisation terminté]()
+- [Formulaire de personnalisation terminé]()
+
+- [Page liste des produits fonctionnelle]()
+
+- [Ajouts des pages [id] dans les dossiers "edit" et "commande"]()
 
 Noté sur 40.
 
