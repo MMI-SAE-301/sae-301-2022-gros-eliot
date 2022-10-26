@@ -46,19 +46,19 @@ const exemples: Montre = [
       <img
         src="/images/ellipse-rose.svg"
         alt="Ellipse de décoration"
-        class="z- absolute inset-x-0 h-1/2 w-full"
+        class="absolute inset-x-0 -z-10 h-1/2 w-full"
       />
       <img
         src="/images/golden-watch-one-tiktak.png"
         alt=""
         class="z-10 w-32 md:w-52"
       />
-      <div class="z-10 flex flex-col gap-2">
+      <div class="z-10 flex flex-col gap-2 p-4 md:p-0">
         <h2 class="text-4xl font-black uppercase md:text-7xl">
           Golden Watch One TiK·TaK
         </h2>
         <p class="font-bold uppercase">// Édition limitée</p>
-        <p class="mx-auto my-2 p-4 md:p-0">
+        <p class="mx-auto my-2">
           Or rose, cuir noir / Boîtier de 45 mm (199,99€)
         </p>
         <p

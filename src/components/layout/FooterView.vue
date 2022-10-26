@@ -17,40 +17,32 @@ import { supabase, user } from "@/supabase";
       class="grid grid-cols-1 grid-rows-2 gap-10 md:grid-cols-2 md:grid-rows-1"
     >
       <div class="flex flex-col gap-3 text-gold-normal">
-        <h4 class="font-bold">Général</h4>
+        <p class="font-bold">Général</p>
         <ul class="font-thin">
-          <RouterLink to="/confidentialite">
-            <li>CGV</li>
-          </RouterLink>
-          <RouterLink to="/confidentialite">
-            <li>CGU</li>
-          </RouterLink>
-          <RouterLink to="/confidentialite">
-            <li>Mentions légales</li>
-          </RouterLink>
+          <li><RouterLink to="/confidentialite">CGV</RouterLink></li>
+
+          <li><RouterLink to="/confidentialite">CGU</RouterLink></li>
+
+          <li>
+            <RouterLink to="/confidentialite">Mentions légales</RouterLink>
+          </li>
         </ul>
       </div>
 
       <div class="flex flex-col gap-3 text-gold-normal" v-if="user">
-        <h4 class="font-bold">Pages principales</h4>
+        <p class="font-bold">Pages principales</p>
         <ul class="font-thin">
-          <RouterLink to="/montre/new">
-            <li>Personnalisation</li>
-          </RouterLink>
-          <RouterLink to="/montre/">
-            <li>Votre collection</li>
-          </RouterLink>
+          <li><RouterLink to="/montre/new">Personnalisation</RouterLink></li>
+
+          <li><RouterLink to="/montre/">Votre collection</RouterLink></li>
         </ul>
       </div>
       <div class="flex flex-col gap-3 text-gold-normal" v-else>
-        <h4 class="font-bold">Pages principales</h4>
+        <p class="font-bold">Pages principales</p>
         <ul>
-          <RouterLink to="/connexion">
-            <li>Personnalisation</li>
-          </RouterLink>
-          <RouterLink to="/connexion">
-            <li>Votre collection</li>
-          </RouterLink>
+          <li><RouterLink to="/connexion">Personnalisation</RouterLink></li>
+
+          <li><RouterLink to="/connexion">Votre collection</RouterLink></li>
         </ul>
       </div>
     </div>

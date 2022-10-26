@@ -12,7 +12,7 @@ import FooterView from "@/components/layout/FooterView.vue";
     <HeaderView />
   </header>
 
-  <main class="h-full">
+  <main>
     <!-- Affiche les pages -->
     <Suspense>
       <router-view class="m-4 p-0 md:m-4 md:p-2" />
@@ -24,6 +24,7 @@ import FooterView from "@/components/layout/FooterView.vue";
       <ArrowUpCircleIcon
         class="stroke m-4 ml-auto h-10 w-10 stroke-white light:stroke-black"
       />
+      <span class="sr-only">Retourner en haut de page</span>
     </a>
     <FooterView />
   </footer>

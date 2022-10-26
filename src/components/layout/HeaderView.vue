@@ -20,6 +20,7 @@ const menuState = ref(true);
     <div class="flex flex-col md:hidden">
       <button @click="menuState = !menuState">
         <Bars3Icon class="h-10 w-10 stroke-white" />
+        <span class="sr-only">Menu hamburger</span>
       </button>
     </div>
 
