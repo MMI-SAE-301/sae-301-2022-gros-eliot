@@ -28,7 +28,7 @@ const props = defineProps({
       <RouterLink
         to="/montre/"
         v-if="user"
-        class="w-fit"
+        class="w-fit text-white"
         @click="menuState = !menuState"
       >
         <p class="w-fit">Collections</p>

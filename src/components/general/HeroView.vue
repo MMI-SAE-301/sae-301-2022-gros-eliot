@@ -5,7 +5,9 @@ import { UserIcon, PlusIcon } from "@heroicons/vue/24/solid";
 
 <template>
   <!--HERO-->
-  <section class="flex flex-col-reverse justify-between md:flex-row">
+  <section
+    class="m-auto flex max-w-6xl flex-col-reverse justify-center gap-10 md:flex-row"
+  >
     <div class="flex flex-col gap-5 md:max-w-lg">
       <h1 class="tiktak-h1 text-gold-normal light:text-black">
         Nous attendions votre visite.

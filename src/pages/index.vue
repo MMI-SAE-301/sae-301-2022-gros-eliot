@@ -1,16 +1,42 @@
 <script setup lang="ts">
 import HeroView from "@/components/general/HeroView.vue";
+import MontreFace from "@/components/general/MontreFace.vue";
+import MontreProfil from "@/components/general/MontreProfil.vue";
+
 import { supabase, user } from "@/supabase";
+import type { Montre } from "@/types";
+
+const chaussure = ref<Montre>(props.data ?? {});
+
+const exemples: Montre = [
+  {
+    boitier: "#FF0000",
+    ecran: "#FFFFFF",
+    bracelet: "#FFFFFF",
+  },
+  {
+    boitier: "#FFFFFF",
+    ecran: "#FFFFFF",
+    bracelet: "#000000",
+  },
+  {
+    boitier: "#FF0000",
+    ecran: "#FFFFFF",
+    bracelet: "#FFFFFF",
+  },
+];
 </script>
 
 <template>
   <!--Contenu de la page accueil-->
-  <section class="flex flex-col gap-40 md:gap-60">
+  <section class="flex flex-col gap-20">
     <!--Hero page accueil-->
     <HeroView class="p-2 md:p-6" />
 
     <!--GOLDEN WATCH ONE-->
-    <section class="grid grid-cols-2 justify-items-center gap-0 md:p-2">
+    <section
+      class="m-auto grid max-w-4xl grid-cols-2 justify-items-center gap-0 md:p-2"
+    >
       <img
         src="/images/ellipse-rose.svg"
         alt="Ellipse de décoration"
@@ -44,7 +70,9 @@ import { supabase, user } from "@/supabase";
   </section>
 
   <!--COLLECTION TIKTAK-->
-  <section class="m-0 flex w-full flex-col gap-5 bg-gold-rose p-5 text-black">
+  <section
+    class="mx-0 my-20 flex w-full flex-col gap-5 bg-gold-rose p-5 text-black"
+  >
     <h2 class="tiktak-h1 text-center font-bold italic">
       AGRANDISSEZ LA COLLECTION TIK·TAK
     </h2>
@@ -55,6 +83,56 @@ import { supabase, user } from "@/supabase";
       répondez à vos besoins rapidement et optez pour une montre TiK·TaK d’une
       qualité sublime.
     </p>
-    <div class="flex flex-row flex-wrap gap-2"></div>
+
+    <div
+      class="flex w-full flex-row flex-wrap items-center justify-center gap-2"
+    >
+      <MontreFace
+        class="w-20 md:w-40"
+        :boitier="'#FFD875'"
+        :ecran="'black'"
+        :bracelet="'black'"
+      />
+      <MontreFace
+        class="w-20 md:w-40"
+        :boitier="'black'"
+        :ecran="'black'"
+        :bracelet="'black'"
+      />
+
+      <MontreFace
+        class="w-20 md:w-40"
+        :boitier="'white'"
+        :ecran="'white'"
+        :bracelet="'white'"
+      />
+      <MontreFace
+        class="w-20 md:w-40"
+        :boitier="'black'"
+        :ecran="'white'"
+        :bracelet="'black'"
+      />
+    </div>
+
+    <RouterLink
+      to="/montre/new"
+      class="tiktak-button-border m-auto border-black"
+    >
+      Personnaliser
+    </RouterLink>
+  </section>
+
+  <!--Exemples de montres : données fictives-->
+  <section class="flex flex-row flex-wrap gap-5">
+    <div class="w-64" v-for="montre in exemples" :key="montre">
+      <RouterLink
+        :to="{
+          name: 'montre-exemple-data',
+          params: { data: JSON.stringify(montre) },
+        }"
+      >
+        <BasketProfil class="w-64" v-bind="montre" />
+      </RouterLink>
+    </div>
   </section>
 </template>
