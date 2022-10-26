@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import HeaderView from "@/components/layout/HeaderView.vue";
 import { Bars3Icon } from "@heroicons/vue/20/solid";
+import HeaderView from "@/components/layout/HeaderView.vue";
+import FooterView from "@/components/layout/FooterView.vue";
 </script>
 
 <template>
@@ -14,4 +15,6 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
       <router-view class="m-4 p-2" />
     </Suspense>
   </main>
+
+  <footer><FooterView /></footer>
 </template>

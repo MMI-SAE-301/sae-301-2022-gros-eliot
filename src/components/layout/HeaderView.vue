@@ -25,11 +25,17 @@ const props = defineProps({
 
     <!--Menu du header : TAB&ORDI -->
     <div class="hidden flex-row items-center justify-center gap-4 md:flex">
-      <RouterLink to="/montre/" class="w-fit" @click="menuState = !menuState">
+      <RouterLink
+        to="/montre/"
+        v-if="user"
+        class="w-fit"
+        @click="menuState = !menuState"
+      >
         <p class="w-fit">Collections</p>
       </RouterLink>
       <RouterLink
         to="/montre/new"
+        v-if="user"
         class="w-fit rounded-lg bg-gold-normal py-1 px-3 font-bold text-black"
         @click="menuState = !menuState"
       >
