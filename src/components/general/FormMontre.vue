@@ -51,7 +51,7 @@ async function upsertMontre(dataForm, node) {
 
 <template>
   <div
-    class="m-auto flex max-w-7xl flex-col-reverse items-start justify-between gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-items-center"
+    class="flex flex-col-reverse items-start justify-between gap-10 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:justify-items-center"
   >
     <!--SECTION CUSTOMISATION-->
     <section class="h-fit max-w-3xl p-5">
