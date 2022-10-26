@@ -36,7 +36,7 @@ if (error) {
     <li
       v-for="montre in montres"
       :key="montre.id"
-      class="flex flex-col items-center justify-center"
+      class="flex flex-col items-center justify-center gap-3"
     >
       <router-link
         :to="{

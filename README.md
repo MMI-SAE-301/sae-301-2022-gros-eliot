@@ -47,6 +47,8 @@ Pour les liens :
 
 - [Ajouts des pages [id] dans les dossiers "edit" et "commande"]()
 
+- [Page du produit disponible (commande possible)]()
+
 Noté sur 40.
 
 - [README](/README.md) bien rempli (0-2-4pts)
