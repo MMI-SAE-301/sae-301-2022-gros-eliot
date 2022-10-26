@@ -18,10 +18,10 @@ defineProps<{
   >
     <template #label="context">
       <div
-        class="h-10 w-10 rounded-full border-2 bg-cover peer-checked:border-red-600"
+        class="w-fit border-2 bg-cover py-2 px-4 peer-checked:border-red-600"
         :style="{ backgroundImage: `url('${context.option.value}')` }"
       >
-        <span class="sr-only">{{ context.option.label }}</span>
+        <p>{{ context.option.label }}</p>
       </div>
     </template>
   </FormKit>

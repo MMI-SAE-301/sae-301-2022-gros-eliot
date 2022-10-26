@@ -9,21 +9,19 @@ import type { Montre } from "@/types";
 
 const exemples: Montre = [
   {
-    libelle: "Red",
+    libelleMontre: "Red",
     boitier: "#FF0000",
     ecran: "#000000",
     bracelet: "#FF0000",
   },
   {
-    libelle: "White",
-
+    libelleMontre: "White",
     boitier: "#FFFFFF",
     ecran: "#000000",
     bracelet: "#FFFFFF",
   },
   {
-    libelle: "Black",
-
+    libelleMontre: "Black",
     boitier: "#000000",
     ecran: "#000000",
     bracelet: "#000000",
@@ -144,7 +142,7 @@ const exemples: Montre = [
         >
           <MontreFace class="w-48" v-bind="montre" />
           <div class="flex flex-col gap-0">
-            <p class="m-auto w-fit font-bold">{{ montre.libelle }}</p>
+            <p class="m-auto w-fit font-bold">{{ montre.libelleMontre }}</p>
             <p class="m-auto w-fit">69,99€</p>
           </div>
         </RouterLink>
