@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import HeroView from "@/components/general/HeroView.vue";
 import MontreFace from "@/components/general/MontreFace.vue";
 import MontreProfil from "@/components/general/MontreProfil.vue";
@@ -6,23 +7,26 @@ import MontreProfil from "@/components/general/MontreProfil.vue";
 import { supabase, user } from "@/supabase";
 import type { Montre } from "@/types";
 
-const chaussure = ref<Montre>(props.data ?? {});
-
 const exemples: Montre = [
   {
+    libelle: "Red",
     boitier: "#FF0000",
-    ecran: "#FFFFFF",
-    bracelet: "#FFFFFF",
+    ecran: "#000000",
+    bracelet: "#FF0000",
   },
   {
+    libelle: "White",
+
     boitier: "#FFFFFF",
-    ecran: "#FFFFFF",
-    bracelet: "#000000",
+    ecran: "#000000",
+    bracelet: "#FFFFFF",
   },
   {
-    boitier: "#FF0000",
-    ecran: "#FFFFFF",
-    bracelet: "#FFFFFF",
+    libelle: "Black",
+
+    boitier: "#000000",
+    ecran: "#000000",
+    bracelet: "#000000",
   },
 ];
 </script>
@@ -123,16 +127,26 @@ const exemples: Montre = [
   </section>
 
   <!--Exemples de montres : données fictives-->
-  <section class="flex flex-row flex-wrap gap-5">
-    <div class="w-64" v-for="montre in exemples" :key="montre">
-      <RouterLink
-        :to="{
-          name: 'montre-exemple-data',
-          params: { data: JSON.stringify(montre) },
-        }"
-      >
-        <BasketProfil class="w-64" v-bind="montre" />
-      </RouterLink>
-    </div>
-  </section>
+  <div class="m-4">
+    <h2 class="tiktak-h2">Exemples de modèles</h2>
+    <section
+      class="my-5 flex flex-row flex-wrap items-center justify-center gap-5"
+    >
+      <div class="w-fit p-4" v-for="montre in exemples" :key="montre">
+        <RouterLink
+          class="flex flex-col gap-5"
+          :to="{
+            name: 'montre-exemple-data',
+            params: { data: JSON.stringify(montre) },
+          }"
+        >
+          <MontreFace class="w-48" v-bind="montre" />
+          <div class="flex flex-col gap-0">
+            <p class="m-auto w-fit font-bold">{{ montre.libelle }}</p>
+            <p class="m-auto w-fit">49,99€</p>
+          </div>
+        </RouterLink>
+      </div>
+    </section>
+  </div>
 </template>

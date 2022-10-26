@@ -1,4 +1,5 @@
 export interface Montre {
+  libelle?: string,
   bracelet?: string;
   boitier?: string;
   ecran?: string;
