@@ -18,7 +18,7 @@ defineProps<{
   >
     <template #label="context">
       <div
-        class="w-fit border-2 bg-cover py-2 px-4 peer-checked:border-red-600"
+        class="w-fit border-2 bg-cover py-2 px-4 text-white peer-checked:border-red-600"
         :style="{ backgroundImage: `url('${context.option.value}')` }"
       >
         <p>{{ context.option.label }}</p>

@@ -3,7 +3,6 @@ export interface Montre {
   bracelet?: string;
   boitier?: string;
   ecran?: string;
-
 }
 
 export const colors = {
@@ -20,8 +19,7 @@ export const colors = {
   "#00FFFF": "Cyan",
   "#C0C0C0": "Gris clair",
   "#808080": "Gris",
-  "#800000": "Marron",
-  "#808000": "Olive",
+
 };
 export const colorsEcran = {
   "#000000": "Noir",
@@ -30,15 +28,15 @@ export const colorsEcran = {
 
 export const materiaux = [
   {
+    value: "",
+    label: "Plastique",
+  },
+  {
     value: "/images/cuir.png",
     label: "Cuir",
   },
   {
-    value: "/images/tissu.png",
-    label: "Tissu",
-  },
-  {
-    value: "/images/synthetique.png",
-    label: "Synthétique",
+    value: "/images/metal.png",
+    label: "Métal",
   },
 ];
