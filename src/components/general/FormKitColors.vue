@@ -18,7 +18,7 @@ defineProps<{
   >
     <template #label="context">
       <div
-        class="h-6 w-6 rounded-full border-2 peer-checked:border-4 peer-checked:border-gold-normal md:h-10 md:w-10"
+        class="h-14 w-14 rounded-full border-2 peer-checked:border-4 peer-checked:border-gold-normal md:h-10 md:w-10"
         :style="{ backgroundColor: context.option.value }"
       >
         <span class="sr-only">{{ context.option.label }}</span>

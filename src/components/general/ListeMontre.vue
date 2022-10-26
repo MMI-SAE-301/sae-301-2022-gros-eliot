@@ -32,30 +32,30 @@ if (error) {
 }
 </script>
 <template>
-  <ul class="flex flex-wrap gap-2">
+  <ul class="grid grid-cols-[repeat(minmax,(300px,1fr))]">
     <li
       v-for="montre in montres"
       :key="montre.id"
       class="flex flex-col items-center justify-center"
     >
       <router-link
-        to="{
+        :to="{
+          name: 'montre-commande-id',
+          params: { id: montre.id_montre },
+        }"
+      >
+        <MontreFace class="h-72 w-72 md:h-96 md:w-96" v-bind="montre" />
+      </router-link>
+
+      <router-link
+        :to="{
           name: 'montre-edit-id',
           params: { id: montre.id_montre },
         }"
       >
-        <MontreFace class="h-96 w-96" v-bind="montre" />
-      </router-link>
-
-      <router-link to="/">
-        <!-- :to='"{
-          name: 'montre-commande-id',
-          params: { id: montre.id_montre },
-        }"'-->
-        <button
-          class="rounded-sm bg-orange-300 py-2 px-5 font-bold text-black hover:bg-orange-500"
-        >
-          Commander
+        <!-- -->
+        <button class="tiktak-button-fill bg-gold-rose text-black">
+          Modifier
         </button>
       </router-link>
     </li>

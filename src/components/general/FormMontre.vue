@@ -64,11 +64,12 @@ async function upsertMontre(dataForm, node) {
         :submit-attrs="{
           classes: {
             input:
-              'tiktak-button-fill bg-gold-normal my-4 text-black md:mx-0 m-auto',
+              'tiktak-button-fill bg-gold-normal my-8 text-black md:mx-0 m-auto',
           },
         }"
         :config="{
           classes: {
+            form: 'm-4',
             input: 'tiktak-input max-w-md',
             label: 'tiktak-label text-gold-rose light:text-black',
           },
@@ -82,13 +83,13 @@ async function upsertMontre(dataForm, node) {
           type="text"
           required
         />
-        <FormKitColors name="boitier" label="Boitier" />
-        <FormKitColors name="bracelet" label="Bracelet" />
-        <FormKitEcrans name="ecran" label="Écran" />
+        <FormKitColors name="boitier" label="Boitier - couleurs" />
+        <FormKitColors name="bracelet" label="Bracelet - couleurs" />
+        <FormKitEcrans name="ecran" label="Écran - couleurs" />
 
         <!--TEXTURES-->
-        <FormKitTexture name="boitier" label="Boitier" />
-        <FormKitTexture name="bracelet" label="Bracelet" />
+        <FormKitTexture name="boitier" label="Boitier - matériaux" />
+        <FormKitTexture name="bracelet" label="Bracelet - matériaux" />
       </FormKit>
     </section>
 
