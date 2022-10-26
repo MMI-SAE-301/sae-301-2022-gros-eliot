@@ -9,7 +9,7 @@ import { supabase, user } from "@/supabase";
   >
     <div class="flex flex-col gap-5 p-4">
       <LogoTikTak class="h-fit w-48 fill-white" />
-      <p class="text-xs">Eliot Gros B1, projet étudiant (SAÉ 301)</p>
+      <p class="text-xs text-white">Eliot Gros B1, projet étudiant (SAÉ 301)</p>
     </div>
 
     <div

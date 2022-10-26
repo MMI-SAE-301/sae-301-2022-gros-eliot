@@ -107,6 +107,7 @@ async function upsertMontre(dataForm, node) {
             alt="vue de face"
             class="h-10 w-10"
           />
+          <span class="sr-only">Afficher la vue de face de la montre</span>
         </button>
 
         <button
@@ -118,6 +119,7 @@ async function upsertMontre(dataForm, node) {
             alt="vue de profil"
             class="h-10 w-10"
           />
+          <span class="sr-only">Afficher la vue de profil de la montre</span>
         </button>
       </div>
       <div>

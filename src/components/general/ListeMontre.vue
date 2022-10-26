@@ -49,7 +49,7 @@ if (error) {
 
       <div class="flex w-fit flex-col gap-0 text-center">
         <h4 class="font-bold">{{ montre.libelle_montre }}</h4>
-        <p>39,99€</p>
+        <p>59,99€</p>
       </div>
 
       <router-link

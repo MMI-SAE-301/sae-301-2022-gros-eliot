@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { PlusIcon } from "@heroicons/vue/20/solid";
 import ListeMontre from "@/components/general/ListeMontre.vue";
 </script>
 <template>
@@ -11,8 +12,10 @@ import ListeMontre from "@/components/general/ListeMontre.vue";
       </h2>
       <RouterLink
         to="/montre/new"
-        class="tiktak-button-border border-gold-rose text-gold-rose light:border-black light:text-black"
-        >Créer une montre</RouterLink
+        class="tiktak-button-border flex items-center gap-1 border-gold-rose text-gold-rose light:border-black light:text-black"
+      >
+        <PlusIcon class="h-4 w-4" aria-hidden="true" />
+        Créer une montre</RouterLink
       >
     </div>
     <ListeMontre />

@@ -15,6 +15,7 @@ defineProps<{
     :sections-schema="{ inner: { $el: null }, decorator: { $el: null } }"
     input-class="peer sr-only"
     options-class="flex flex-wrap gap-2"
+    wrapper-class="my-1"
   >
     <template #label="context">
       <div

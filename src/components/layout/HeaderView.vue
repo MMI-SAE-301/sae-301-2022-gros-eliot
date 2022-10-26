@@ -14,6 +14,7 @@ const props = defineProps({
   >
     <RouterLink to="/">
       <LogoTikTak class="h-10 w-20 fill-white" />
+      <span class="sr-only">Logo du site TikTak</span>
     </RouterLink>
 
     <!--Menu du header : MOBILE -->
