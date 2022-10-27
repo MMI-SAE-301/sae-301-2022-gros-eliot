@@ -73,33 +73,45 @@ Noté sur 40.
   - [lien vers son usage](/src/pages/Connexion.vue#L4)
 - [x] Composants graphiques (0-1-2pts)
 
-  - [éléments layouts (header, footer)](/src/components/layout/HeaderView.vue)
+  - [éléments layouts (header, footer)](/src/components/layout/)
   - [icons : exemple avec LogoTikTak](/src/components/icons/LogoTikTak.vue)
   - [Composants généraux avec les formulaires, HeroView...](/src/components/general/)
 
 - Technique CSS (0-1-2pts)
-  - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
-    config. Tailwind (eg. before/after avec content, background...))
-    - ...
-  - liens
+
+  - [backgroundColor](/src/components/general/FormKitColors.vue#L23)
+  - [background avec image + couleur par dessus](/src/components/general/FormKitTexture.vue#L24)
+  - [screens pour light mode](/tailwind.config.js#L20)
+  - [gridTemplateColumns (template de grid)](/tailwind.config.js#L23)
+
 - Mise en page CSS (0-1-2pts)
-  - Quelles techniques (Grilles Flex...)
-    - ...
-  - liens
-  - [ ] Mise en page fluide
-- [ ] Mobile First (0-1-2pts)
-  - [ ] Plusieurs tailles
-    - Lesquelles...
-- [ ] Dark Mode (0-1-2pts)
+
+  - [Flex](/src/pages/index.vue#L138)
+  - [Grid](/src/components/general/CommandeMontre.vue#L99)
+  - [Hidden, block](/src/components/layout/HeaderView.vue)
+
+  - [x] Mise en page fluide
+
+- [x] Mobile First (0-1-2pts)
+
+  - [x] Plusieurs tailles
+    - [Taille de base, md et lg : exemple (cliquez ici)](src/index.css#L11)
+
+- [x] Dark Mode (0-1-2pts)
+
   - [ ] Simple usage de 'light:'
-  - [ ] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
-    - liens
+  - [x] Mise en place avec usage de custom property pour les couleurs. Ou usage de DaisyUI AVEC thèmes perso
+    - [Page de produit (partie commande)](/src/components/general/CommandeMontre.vue#L79)
+    - [Page accueil](/src/pages/index.vue)
+    - [Fond des pages](/index.html#L18)
+
 - "tailwin.config.js" (0-1-2pts)
-  - [ ] usage basique couleurs/fonts
-  - [ ] Comporte des données supplémentaires (utilisées !). Eg: "content-xxx", "bg-xxx", "grid-cols-xxx"...
-    - liens
+
+  - [usage basique couleurs/fonts](/tailwind.config.js#L8)
+  - [gridTemplateColumns](/tailwind.config.js#L23)
+
 - Composants "accessibles" (0-1-2pts)
-  - [ ] textes "accessibles" (eg. 'sr-only')
+  - [textes "accessibles" (eg. 'sr-only')](/src/App.vue#L30)
   - [ ] Contenu accessible ET Usage de composants étudié pour accessibilité (Eg. HeadlessUI)
 
 [^1]: Supprimez les mentions inutiles.
