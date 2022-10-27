@@ -3,7 +3,7 @@
 - **Nom : Gros**
 - **Prénom : Eliot**
 - **URL maquette Figma: https://www.figma.com/file/xRo5o8utclGQ4MUhuk161k/SAE301---Eliot-Gros-B1?node-id=0%3A1**
-- **URL publique du site :**
+- **URL publique du site : https://http://tiktak.eliotgros.fr/**
 - **URL projet Supabase : https://kisrworleajyjetsbnmz.supabase.co**
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
