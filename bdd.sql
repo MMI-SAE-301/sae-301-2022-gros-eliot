@@ -49,6 +49,8 @@ select materiel.* FROM montre, materiel WHERE materiel.id_materiel = montre.id_m
 -- code pour la création des policies
 --
 
+-- Montres
+
 CREATE POLICY "Enable read access for authenticated" ON "public"."montre"
 AS PERMISSIVE FOR SELECT
 TO authenticated
@@ -57,19 +59,20 @@ USING ((uid() = id_user));
 CREATE POLICY "Enable insert for authenticated users only" ON "public"."montre"
 AS PERMISSIVE FOR INSERT
 TO authenticated
-
 WITH CHECK ((uid() = id_user));
 
 CREATE POLICY "Enable update for users authentificated IF NOT ordered" ON "public"."montre"
 AS PERMISSIVE FOR UPDATE
 TO authenticated
-USING ((uid() = id_user))
-WITH CHECK ((commande = false));
+USING ((uid() = id_user) AND (commande = false))
+WITH CHECK ((uid() = id_user));
 
 CREATE POLICY "Enable delete for authenticated users only" ON "public"."montre"
 AS PERMISSIVE FOR DELETE
 TO authenticated
 USING ((uid() = id_user))
+
+-- Matériaux
 
 CREATE POLICY "Enable read access for all authenticated" ON "public"."materiel"
 AS PERMISSIVE FOR SELECT
