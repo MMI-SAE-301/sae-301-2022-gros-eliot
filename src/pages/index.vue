@@ -6,6 +6,7 @@ import { supabase, user } from "@/supabase";
 import HeroView from "@/components/general/HeroView.vue";
 // @ts-ignore
 import MontreFace from "@/components/general/MontreFace.vue";
+
 // @ts-ignore
 import MontreProfil from "@/components/general/MontreProfil.vue";
 
