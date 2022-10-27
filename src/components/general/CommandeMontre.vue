@@ -40,6 +40,8 @@ async function upsertCommande(dataForm, node) {
     router.push("/montre/");
     node.setErrors([]);
     console.log("Réussi!");
+    // @ts-ignore
+    montre.commande == true;
   }
 }
 

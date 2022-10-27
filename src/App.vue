@@ -22,12 +22,14 @@ import { supabase, user } from "./supabase";
   </main>
 
   <footer class="z-50">
-    <a href="#top">
-      <ArrowUpCircleIcon
-        class="stroke m-4 ml-auto h-10 w-10 stroke-white light:stroke-black"
-      />
-      <span class="sr-only">Retourner en haut de page</span>
-    </a>
+    <div class="ml-auto w-fit">
+      <a href="#top">
+        <ArrowUpCircleIcon
+          class="stroke m-4 h-10 w-10 stroke-white light:stroke-black"
+        />
+        <span class="sr-only">Retourner en haut de page</span>
+      </a>
+    </div>
     <FooterView />
   </footer>
 </template>

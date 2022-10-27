@@ -7,14 +7,14 @@ export interface Montre {
 
 export const colors = {
   "#FFFFFF": "Blanc",
+  "#C1C1C1": "Gris",
   "#000000": "Noir",
   "#FFD875": "Or",
   "#FFCAC3": "Or rose",
-  "#FF4747": "Rouge",
-  "#85CC79": "Vert",
-  "#5547FF": "Bleu",
-  "#A547C7": "Violet",
-  "#808080": "Gris",
+  "#C83C3C": "Rouge",
+  "#D4B1E0": "Violet",
+  "#8ACFF5": "Bleu",
+  "#ABDAA4": "Vert",
 
 };
 export const colorsEcran = {
