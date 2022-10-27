@@ -72,10 +72,16 @@ const menuState = ref(true);
     class="block w-full bg-zinc-800 md:hidden light:bg-zinc-100"
   >
     <div class="flex flex-col-reverse items-center justify-center gap-4 p-4">
-      <RouterLink to="/montre/" class="w-fit" @click="menuState = !menuState">
+      <RouterLink
+        v-if="user"
+        to="/montre/"
+        class="w-fit"
+        @click="menuState = !menuState"
+      >
         <p class="w-fit">Collections</p>
       </RouterLink>
       <RouterLink
+        v-if="user"
         to="/montre/new"
         class="w-fit rounded-lg bg-gold-normal py-1 px-3 font-bold text-black"
         @click="menuState = !menuState"

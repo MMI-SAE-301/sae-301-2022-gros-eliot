@@ -39,7 +39,7 @@ import { supabase, user } from "@/supabase";
       </div>
       <div class="flex flex-col gap-3 text-gold-normal" v-else>
         <p class="font-bold">Pages principales</p>
-        <ul>
+        <ul class="font-thin">
           <li><RouterLink to="/connexion">Personnalisation</RouterLink></li>
 
           <li><RouterLink to="/connexion">Votre collection</RouterLink></li>

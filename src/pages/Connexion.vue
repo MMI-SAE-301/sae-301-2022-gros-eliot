@@ -68,7 +68,7 @@ async function loginGoogle() {
           @submit="signIn"
           :config="{
             classes: {
-              input: 'tiktak-input max-w-full text-white',
+              input: 'tiktak-input max-w-full text-white light:text-black',
               label: 'tiktak-label light:text-black',
               form: 'flex flex-col gap-4',
             },
