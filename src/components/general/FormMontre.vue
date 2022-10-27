@@ -82,18 +82,39 @@ async function upsertMontre(dataForm, node) {
         <FormKit
           name="libelle_montre"
           label="Nom de la montre"
+          aria-label="Nom de la montre"
           value=""
           placeholder="My Watch 01"
           type="text"
           required
         />
-        <FormKitColors name="boitier" label="Boitier - couleurs" />
-        <FormKitColors name="bracelet" label="Bracelet - couleurs" />
-        <FormKitEcrans name="ecran" label="Écran - couleurs" />
+        <FormKitColors
+          name="boitier"
+          label="Boitier - couleurs"
+          aria-label="Boitier - couleurs"
+        />
+        <FormKitColors
+          name="bracelet"
+          label="Bracelet - couleurs"
+          aria-label="Bracelet - couleurs"
+        />
+        <FormKitEcrans
+          name="ecran"
+          label="Écran - couleurs"
+          aria-label="Écran - couleurs"
+        />
 
         <!--TEXTURES-->
-        <FormKitTexture name="boitier" label="Boitier - matériaux" />
-        <FormKitTexture name="bracelet" label="Bracelet - matériaux" />
+        <FormKitTexture
+          name="boitier"
+          label="Boitier - matériaux"
+          aria-label="Boitier - matériaux"
+        />
+        <FormKitTexture
+          name="bracelet"
+          label="Bracelet - matériaux"
+          aria-label="Bracelet - matériaux"
+        />
       </FormKit>
     </section>
 
@@ -131,13 +152,17 @@ async function upsertMontre(dataForm, node) {
           class="h-60 w-60 lg:h-96 lg:w-96"
           v-bind="montre"
           :class="{ hidden: profilView }"
+          aria-controls="faceView"
         />
+        <span class="sr-only">Montre vue de face</span>
 
         <MontreProfil
           class="h-60 w-60 lg:h-96 lg:w-96"
           v-bind="montre"
           :class="{ hidden: faceView }"
+          aria-controls="profilView"
         />
+        <span class="sr-only">Montre vue de profil</span>
       </div>
     </section>
   </div>

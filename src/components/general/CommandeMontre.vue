@@ -41,7 +41,7 @@ async function upsertCommande(dataForm, node) {
     node.setErrors([]);
     console.log("Réussi!");
     // @ts-ignore
-    montre.commande == true;
+    montre.commande.value = true;
   }
 }
 
@@ -87,8 +87,10 @@ async function supprimerMontre() {
     class="my-8 mx-4 flex max-w-3xl justify-center gap-5 md:mx-auto md:gap-20"
   >
     <MontreFace class="w-full" v-bind="montre" />
+    <span class="sr-only">Montre vue de face</span>
 
     <MontreProfil class="w-full" v-bind="montre" />
+    <span class="sr-only">Montre vue de profil</span>
   </section>
 
   <!--COMMANDE ET SUPPRESSION-->

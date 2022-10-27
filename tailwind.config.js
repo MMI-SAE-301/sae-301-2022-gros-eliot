@@ -16,7 +16,6 @@ module.exports = {
         'roboto': ['Roboto', 'sans-serif'],
       },
 
-
       screens: {
         'light': { 'raw': '(prefers-color-scheme: light)' },
       },

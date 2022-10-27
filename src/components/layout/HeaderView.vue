@@ -18,7 +18,7 @@ const menuState = ref(true);
 
     <!--Menu du header : MOBILE -->
     <div class="flex flex-col md:hidden">
-      <button @click="menuState = !menuState">
+      <button id="btnMenu" @click="menuState = !menuState" aria-controls="menu">
         <Bars3Icon class="h-10 w-10 stroke-white" />
         <span class="sr-only">Menu hamburger</span>
       </button>
@@ -68,6 +68,7 @@ const menuState = ref(true);
   <!--Menu du header : CONTENU DU MENU MOBILE -->
   <section
     :class="{ hidden: menuState }"
+    aria-labelledby="btnMenu"
     class="block w-full bg-zinc-800 md:hidden light:bg-zinc-100"
   >
     <div class="flex flex-col-reverse items-center justify-center gap-4 p-4">
