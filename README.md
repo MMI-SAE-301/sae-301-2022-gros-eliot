@@ -33,25 +33,31 @@ Pour les liens :
 
 - [connexion fonctionnel (Google, Facebook)](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/3401c31e47153d5a806c1e2dbc6074250ee99186)
 
-- [Footer responsive et fonctionnel]()
+- [Footer responsive et fonctionnel](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/159d2c6fbe250d0f9e0c1204ccc86f1a7b8fe61e)
 
-- [Hero de la page d'accueil - light mode à la place du dark mode]()
+- [Hero de la page d'accueil - light mode à la place du dark mode](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/f4780f62b3cf10f6972e17c9989e8de4cfbc3d04)
 
-- [Fin page d'accueil avec exemples (composants SVG importés)]()
+- [Fin page d'accueil avec exemples (composants SVG importés)](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/32ae61ddefb8b0564e085d300f072d6fc7692fcc)
 
-- [Début formulaire de personnalisation]()
+- [Début formulaire de personnalisation](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/f111777339683339652a044a54740617e2ce5711)
 
-- [Formulaire de personnalisation terminé]()
+- [Formulaire de personnalisation terminé](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/dfc5b87e2f6de911bd0889ab88fb006b0be16115)
 
-- [Page liste des produits fonctionnelle]()
+- [Page liste des produits fonctionnelle](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/0589932d5d2e34de43b1f0fc38011df4b92c0da6)
 
-- [Ajouts des pages [id] dans les dossiers "edit" et "commande"]()
+- [Page du produit disponible (commande possible)](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/71fa925a9cc8b5051a46dce8e60064eeaa097f0d)
 
-- [Page du produit disponible (commande possible)]()
+- [Page du produit : update (suppression possible)](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/587787f68d127ecc2dc839f54cf63ae82f353dbc)
 
-- [Page du produit : update (suppression possible)]()
+- [Améliorations SEO](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/a6f9ac4905fa265c7ea58b08b55208f9e60cf6b0)
 
-- [...]()
+- [Améliorations performances : optimisation des images](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/f04763aa6d0d47f8b72d5037768e5fc21812fc48)
+
+- [Correction du bug des aiguilles](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/ea5585a50ef0e087cca1092a145da7f14053df59)
+
+- [Accessibilité : ajout d'éléments](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/9bdbab2fe0a58130dc251613e18a87859c62b4a2)
+
+- [Fichier BDD.sql mis à jour](https://github.com/MMI-SAE-301/sae-301-2022-gros-eliot/commit/145ee41d1607bae3e5999f2939893355933c4c91)
 
 Noté sur 40.
 
@@ -65,8 +71,12 @@ Noté sur 40.
 - [x] usage de Classes utilitaires (1pt)
   - [lien vers sa définition](/src/index.css)
   - [lien vers son usage](/src/pages/Connexion.vue#L4)
-- [ ] Composants graphiques (0-1-2pts)
-  - liens
+- [x] Composants graphiques (0-1-2pts)
+
+  - [éléments layouts (header, footer)](/src/components/layout/HeaderView.vue)
+  - [icons : exemple avec LogoTikTak](/src/components/icons/LogoTikTak.vue)
+  - [Composants généraux avec les formulaires, HeroView...](/src/components/general/)
+
 - Technique CSS (0-1-2pts)
   - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
     config. Tailwind (eg. before/after avec content, background...))
