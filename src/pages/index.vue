@@ -12,7 +12,7 @@ import MontreProfil from "@/components/general/MontreProfil.vue";
 
 import type { Montre } from "@/types";
 
-const exemples: Montre = [
+const exemples: Montre[] = [
   {
     libelle_montre: "Red",
     boitier: "#FF0000",
@@ -137,7 +137,11 @@ const exemples: Montre = [
     <div
       class="my-5 flex w-full flex-row flex-wrap items-center justify-center gap-5"
     >
-      <div class="w-fit p-4" v-for="montre in exemples" :key="montre">
+      <div
+        class="w-fit p-4"
+        v-for="montre in exemples"
+        :key="JSON.stringify(montre)"
+      >
         <RouterLink
           class="flex flex-col gap-5"
           :to="{
