@@ -3,7 +3,7 @@ import { ref } from "vue";
 import type { Montre, colorsEcran } from "@/types";
 import { TrashIcon } from "@heroicons/vue/24/outline";
 
-import { supabase } from "@/supabase";
+import { supabase, user } from "@/supabase";
 import { useRouter } from "vue-router";
 // @ts-ignore
 import FormKitColors from "@/components/general/FormKitColors.vue";

@@ -54,8 +54,8 @@ const exemples: Montre = [
         alt="Montre 'Golden Watch One TikTak', en édition limitée"
         class="z-10 w-32 md:w-52"
       />
-      <div class="z-10 flex flex-col gap-2 p-4 md:p-0">
-        <h2 class="text-4xl font-black uppercase md:text-7xl">
+      <div class="z-10 flex flex-col gap-0 md:gap-2 md:p-0">
+        <h2 class="text-3xl font-black uppercase md:text-7xl">
           Golden Watch One TiK·TaK
         </h2>
         <p class="font-bold uppercase">// Édition limitée</p>

@@ -5,6 +5,8 @@ import { ArrowUpCircleIcon } from "@heroicons/vue/24/outline";
 import HeaderView from "@/components/layout/HeaderView.vue";
 // @ts-ignore
 import FooterView from "@/components/layout/FooterView.vue";
+
+import { supabase, user } from "./supabase";
 </script>
 
 <template>
